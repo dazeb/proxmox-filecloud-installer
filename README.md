@@ -1,6 +1,6 @@
-![filecloud-logo](https://www.getfilecloud.com/wp-content/uploads/2020/11/filecloud-logo.png)
-
 # FileCloud Proxmox Installer
+
+![filecloud-logo](https://www.getfilecloud.com/wp-content/uploads/2020/11/filecloud-logo.png)
 
 An unofficial Proxmox Helper Script to install FileCloud in Proxmox 8.
 
@@ -21,34 +21,34 @@ All commands should be run in the Proxmox console.
 ### Oneline Installer Directly from GitHub
 
 ```sh
-bash <(curl -sSfL https://raw.githubusercontent.com/yourusername/proxmox-filecloud-installer/main/filecloud-install.sh)
+bash <(curl -sSfL https://raw.githubusercontent.com/dazeb/proxmox-filecloud-installer/main/filecloud_install.sh)
 ```
 
 ### Download the Script to Your Proxmox Host by Cloning the Repo or Using `wget`
 
 ```sh
-git clone https://github.com/yourusername/proxmox-filecloud-installer.git
+git clone https://github.com/dazeb/proxmox-filecloud-installer.git
 ```
 
 cd into the folder, make the file executable then run the script
 
 ```sh
 cd proxmox-filecloud-installer
-chmod +x filecloud-install.sh
-./filecloud-install.sh
+chmod +x filecloud_install.sh
+./filecloud_install.sh
 ```
 
 #### Download Script to Your Machine Through
 
 ```sh
-wget https://raw.githubusercontent.com/yourusername/proxmox-filecloud-installer/main/filecloud-install.sh
+wget https://raw.githubusercontent.com/dazeb/proxmox-filecloud-installer/main/filecloud_install.sh
 ```
 
 Make the file executable then run the script.
 
 ```sh
-chmod +x filecloud-install.sh
-./filecloud-install.sh
+chmod +x filecloud_install.sh
+./filecloud_install.sh
 ```
 
 The installer will ask for the URL of the FileCloud image, the amount of RAM to allocate, and the number of processor cores. The rest is automatic. Default values are 4GB RAM and 4 Cores.
